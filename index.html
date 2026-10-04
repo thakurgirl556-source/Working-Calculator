@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="calculator">
+        <input type="text" placeholder="0" id="display" readonly>
+        <div class="button1">
+            <button class="operator" onclick=" recentvalue='';
+      document.querySelector('#display').value=recentvalue;">C</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'';
+      document.querySelector('#display').value=recentvalue;">DEL</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'%';
+      document.querySelector('#display').value=recentvalue;">%</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'/';
+      document.querySelector('#display').value=recentvalue;">/</button>
+        </div>
+        <div>
+            <button class="operator" onclick=" recentvalue=recentvalue+'7';
+      document.querySelector('#display').value=recentvalue;">7</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'8';
+      document.querySelector('#display').value=recentvalue;">8</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'9';
+      document.querySelector('#display').value=recentvalue;">9</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'*';
+      document.querySelector('#display').value=recentvalue;">*</button>
+        </div>
+        <div>
+            <button class="operator" onclick=" recentvalue=recentvalue+'4';
+      document.querySelector('#display').value=recentvalue;">4</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'5';
+      document.querySelector('#display').value=recentvalue;">5</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'6';
+      document.querySelector('#display').value=recentvalue;">6</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'-';
+      document.querySelector('#display').value=recentvalue;">-</button>
+        </div>
+        <div>
+            <button class="operator" onclick=" recentvalue=recentvalue+'1';
+      document.querySelector('#display').value=recentvalue;">1</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'2';
+      document.querySelector('#display').value=recentvalue;">2</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'3';
+      document.querySelector('#display').value=recentvalue;">3</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'+';
+      document.querySelector('#display').value=recentvalue;">+</button>
+
+        </div>
+        <div>
+            <button class="operator" onclick=" recentvalue=recentvalue+'00';
+      document.querySelector('#display').value=recentvalue;">00</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'0';
+      document.querySelector('#display').value=recentvalue;">0</button>
+            <button class="operator" onclick=" recentvalue=recentvalue+'.';
+      document.querySelector('#display').value=recentvalue;">.</button>
+      <button class="operator" onclick="let result =eval(recentvalue);
+      recentvalue=result;
+      document.querySelector('#display').value=recentvalue;">=</button>
+        </div>
+    </div>
+    <script>
+      let recentvalue='';
+      document.querySelector('#display').value=recentvalue;
+    </script>
+</body>
+</html>
